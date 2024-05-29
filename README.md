@@ -1,0 +1,1 @@
+Este projeto é uma aplicação web simples que permite ao usuário consultar a temperatura atual de uma cidade específica. A aplicação faz uso da API OpenWeatherMap para obter os dados meteorológicos. O projeto é estruturado de acordo com o padrão de projeto Strategy, que permite a adição de novas estratégias para obtenção de dados de temperatura de forma flexível e escalável.
