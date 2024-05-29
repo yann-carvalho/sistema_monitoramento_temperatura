@@ -1,0 +1,28 @@
+<!-- Introdução
+
+Este projeto é uma aplicação web simples que permite ao usuário consultar a temperatura atual de uma cidade específica. A aplicação faz uso da API OpenWeatherMap para obter os dados meteorológicos. O projeto é estruturado de acordo com o padrão de projeto Strategy, que permite a adição de novas estratégias para obtenção de dados de temperatura de forma flexível e escalável. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Temperatura</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Consulta de Temperatura</h1>
+        <div class="input-group">
+            <label for="cidade">Digite o nome da cidade:</label>
+            <input type="text" id="cidade" placeholder="Ex: João Pessoa">
+            <button id="buscar">Buscar</button>
+        </div>
+        <div class="output-group">
+            <h2 id="resultado"></h2>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
