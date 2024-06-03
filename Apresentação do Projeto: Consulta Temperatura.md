@@ -1,18 +1,18 @@
 ## Apresentação do Projeto: Consulta de Temperatura
 
-### Slide 1: Título
+### 1: Título
 **Consulta de Temperatura**
 Uma aplicação web simples para consultar a temperatura de qualquer cidade utilizando a API OpenWeatherMap.
 
 ---
 
-### Slide 2: Introdução
+### 2: Introdução
 **Objetivo do Projeto:**
 Desenvolver uma aplicação web que permite ao usuário consultar a temperatura atual de uma cidade específica, utilizando o padrão de projeto Strategy.
 
 ---
 
-### Slide 3: Estrutura do Projeto
+### 3: Estrutura do Projeto
 **Arquivos Principais:**
 - `index.html`: Estrutura HTML da aplicação.
 - `styles.css`: Estilos CSS para a aplicação.
@@ -20,7 +20,7 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
 
 ---
 
-### Slide 4: Funcionalidades
+### 4: Funcionalidades
 **Funcionalidades Principais:**
 - Entrada de texto para o nome da cidade.
 - Botão para buscar a temperatura.
@@ -29,14 +29,14 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
 
 ---
 
-### Slide 5: Padrão de Projeto Strategy
+### 5: Padrão de Projeto Strategy
 **Padrão de Projeto Utilizado:**
 - **Strategy:** Permite a definição de uma família de algoritmos, encapsulando cada um deles e tornando-os intercambiáveis.
 - **Aplicação:** Diferentes estratégias para obter a temperatura podem ser implementadas e usadas de forma intercambiável.
 
 ---
 
-### Slide 6: Estrutura do HTML (`index.html`)
+### 6: Estrutura do HTML (`index.html`)
 ```html
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,7 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
 
 ---
 
-### Slide 7: Estilos CSS (`styles.css`)
+### 7: Estilos CSS (`styles.css`)
 ```css
 body {
     font-family: Arial, sans-serif;
@@ -97,7 +97,7 @@ body {
 
 ---
 
-### Slide 8: Lógica JavaScript (`main.js`)
+### 8: Lógica JavaScript (`main.js`)
 ```javascript
 // Interface da estratégia
 class EstrategiaTemperatura {
@@ -158,7 +158,7 @@ document.getElementById('buscar').addEventListener('click', function() {
 
 ---
 
-### Slide 9: Demonstração
+### 9: Demonstração
 **Demonstração ao vivo da aplicação:**
 1. Abra a aplicação em um navegador.
 2. Insira o nome de uma cidade.
@@ -167,7 +167,7 @@ document.getElementById('buscar').addEventListener('click', function() {
 
 ---
 
-### Slide 10: Conclusão
+### 10: Conclusão
 **Benefícios do Projeto:**
 - Simplicidade e clareza do código.
 - Flexibilidade e extensibilidade devido ao uso do padrão Strategy.
