@@ -37,7 +37,7 @@ class ServicoDeTemperatura {
 
 document.getElementById('buscar').addEventListener('click', function() {
     const cidade = document.getElementById('cidade').value;
-    const apiKey = 'f50240869ab9e8c2545f6c41145d54d2'; // Substitua por sua chave de API
+    const apiKey = 'f50240869ab9e8c2545f6c41145d54d2';
     const estrategia = new EstrategiaOpenWeatherMap();
     const servico = new ServicoDeTemperatura(estrategia);
 
