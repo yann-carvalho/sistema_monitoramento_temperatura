@@ -31,9 +31,29 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
 
 ### 5: Padrão de Projeto Strategy
 **Padrão de Projeto Utilizado:**
-- **Strategy:** Permite a definição de uma família de algoritmos, encapsulando cada um deles e tornando-os intercambiáveis.
-- **Aplicação:** Diferentes estratégias para obter a temperatura podem ser implementadas e usadas de forma intercambiável.
+- **Strategy:** O padrão de projeto Strategy é um padrão comportamental que permite definir uma família de algoritmos, encapsulá-los e torná-los intercambiáveis. O Strategy permite que o algoritmo varie independentemente dos clientes que o utilizam.
+- **Aplicação:** Estrutura do Sistema
 
+    Interface da Estratégia (Strategy Interface):
+        EstrategiaTemperatura é a interface que define o método obterTemperatura(cidade, apiKey).
+        Todas as estratégias concretas irão implementar este método.
+
+    Implementação Concreta da Estratégia (Concrete Strategy):
+        EstrategiaOpenWeatherMap é uma implementação concreta da interface EstrategiaTemperatura.
+        Este método utiliza a API do OpenWeatherMap para obter a temperatura de uma cidade específica.
+
+    Contexto (Context):
+        ServicoDeTemperatura é o contexto que utiliza uma instância da estratégia para obter a temperatura.
+        Este contexto permite definir ou alterar a estratégia a ser utilizada através do método definirEstrategia(estrategia).
+
+    Benefícios do Padrão Strategy:
+
+    Flexibilidade:
+        Permite mudar o algoritmo em tempo de execução.
+    Manutenibilidade:
+        Cada estratégia é encapsulada em sua própria classe, facilitando a manutenção e a evolução do código.
+    Extensibilidade:
+        Novas estratégias podem ser adicionadas sem modificar o contexto.
 ---
 
 ### 6: Estrutura do HTML (`index.html`)
@@ -75,7 +95,7 @@ body {
     align-items: center;
     height: 100vh;
     color: white;
-    background-image: url('https://vivoverde.com.br/wp-content/uploads/2020/01/weather_capa-720x434.jpg');
+    background-image: url('https://i.ibb.co/L9hXhRL/weather-capa-720x434.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -92,7 +112,85 @@ body {
     backdrop-filter: blur(10px);
 }
 
-/* Outros estilos... */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #fff;
+    text-shadow:
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1.1em;
+    color: #fff;
+    text-shadow:
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000;
+}
+
+.input-group input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group button {
+    padding: 10px;
+    width: 100%;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+.output-group {
+    margin-top: 20px;
+}
+
+#resultado {
+    font-size: 1.4em;
+    color: #fff;
+    text-shadow:
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000,
+    0 0 2px #000;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 70% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 80% !important;
+    }
+}
 ```
 
 ---
