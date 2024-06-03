@@ -46,12 +46,13 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
         ServicoDeTemperatura é o contexto que utiliza uma instância da estratégia para obter a temperatura.
         Este contexto permite definir ou alterar a estratégia a ser utilizada através do método definirEstrategia(estrategia).
 
-    Benefícios do Padrão Strategy:
+- **Benefícios do Padrão Strategy:**
 
     Flexibilidade:
         Permite mudar o algoritmo em tempo de execução.
     Manutenibilidade:
         Cada estratégia é encapsulada em sua própria classe, facilitando a manutenção e a evolução do código.
+
     Extensibilidade:
         Novas estratégias podem ser adicionadas sem modificar o contexto.
 ---
