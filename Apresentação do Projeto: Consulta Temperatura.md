@@ -50,6 +50,7 @@ Desenvolver uma aplicação web que permite ao usuário consultar a temperatura 
 
     Flexibilidade:
         Permite mudar o algoritmo em tempo de execução.
+
     Manutenibilidade:
         Cada estratégia é encapsulada em sua própria classe, facilitando a manutenção e a evolução do código.
 
